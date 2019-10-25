@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel=" stylesheet " type="text/css " href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.css " />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="frm">
+            <h1 align="center">Usuarios</h1>
+            <div class="row">
+
+                <div class="col-4">
+                    <div class="form-group" align="center">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder=" Ej. Atanasio">
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="form-group" align="center">
+                        <label>Apellido</label>
+                        <input type="text" class="form-control" id="lastname" placeholder=" Ej. Escalante">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group" align="center">
+                        <label>Edad</label>
+                        <input type="number" class="form-control" id="age" placeholder=" Ej. 24 meses">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group" align="center">
+                        <label>Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ej. 123@hotmail.com">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group" align="center">
+                        <label>Telefono</label><br>
+                        <input type="number" class="form-control" id="phone" placeholder="Ej. 631-514-4879">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-10 col-1">
+                    <button type="submit" id="add" class="btn btn-primary">Ingresar</button>
+                </div>
+                <div class="col-1">
+                    <button type="reset" class="btn btn-default">Cancelar</button>
+                </div>
+            </div>
+            <h1 align="center">Datos Registrados</h1>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <table id="tbl"></table>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/js-datepicker.min.js"></script>
+    <script src="es.min.js/js-es.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/bootstrap-notify.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
